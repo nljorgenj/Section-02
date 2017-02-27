@@ -1,5 +1,7 @@
 #include "FBullCowGame.h"
 #include <map>
+#include <string> // TODO remove later
+
 #define TMap std::map
 
 using int32 = int;
@@ -96,9 +98,14 @@ bool FBullCowGame::IsIsogram(FString Word) const
 	// setup our map
 	TMap<char, bool> LetterSeen;
 
-	for (char Letter : Word)	// for all letters of the word.
+	for (auto Letter : Word)	// for all letters of the word.
 	{
+
+		Letter = tolower(Letter);
+				
 		// loop through all the letters of the word
+		std::cout << "" << *LetterSeen.value_comp;
+
 
 		// if the letter is in the map
 		// we do NOT have an isogram

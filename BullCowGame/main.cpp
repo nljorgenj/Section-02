@@ -110,7 +110,7 @@ void PrintGameSummary()
 {
 	if (BCGame.IsGameWon())
 	{
-		std::cout << "WELL DONW - YOU WIN!\n";
+		std::cout << "WELL DONE - YOU WIN!\n";
 	}
 	else
 	{
